@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Desafio da imagem flexivel</title>
+</head>
+<body>
+    <h1>Este é um site com a capacidade de adaptar a imagem de acordo com o tamanho navegador</h1>
+    <picture>
+        <source media="(max-width: 300px)" srcset="imagens/paisagem-150.jpg" type="image/jpeg">
+        <source media="(max-width: 350px)" srcset="imagens/paisagem-300.jpg" type="image/jpeg">
+        <source media="(max-width: 1250px)" srcset="imagens/paisagem-650.jpg" type="image/jpeg">
+        <source media="(max-width: 1800px)" srcset="imagens/paisagem-1200.jpg" type="image/jpeg">
+        <img src="imagens/paisagem-full.jpg" alt="Imagem de um grande Marcar">
+    </picture>
+</body>
+</html>

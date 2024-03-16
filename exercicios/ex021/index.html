@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 { /*Box level*/
+
+            background-color: lightgray;
+            /*Box size*/
+            height: 300px;
+            width: 300px;
+            /*Short hand*/
+            border: 10px solid darkslategray;
+
+            padding: 10px 20px;
+
+            margin: 20px auto 40px auto;
+
+            outline: 2px dashed darkmagenta;
+
+            box-shadow: 2px 3px 5px black;
+        }
+        a { /*Inline-level*/
+            border: 2px solid red;
+            padding: 2px 4px 6px 8px;
+        }
+
+        p#right{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos também são exemlos de caixa box-level <a href="#" rel="next" target="_self">já links, são exemplo de inline-level</a></p>
+    <p id="right"><a href="caixa02.html" rel="next" target="_self" >Próxima página</a></p>
+</body>
+</html>
