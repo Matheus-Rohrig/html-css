@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,35 +11,28 @@
             margin: 0px;
         }
 
-        div{
-            position: relative;
-            max-width: 100%;
-            max-height: 100%;
+        #espaco {
+            height: 2000px;
+            width: 2000px;
+            background: black url("imagens/espaco.jpg") center center no-repeat fixed;
+
         }
 
-        img.espaco {
-           
-            z-index: 1;
-            max-width: 100%;
-            max-height: 100%;
-        }
 
-        img.astronauta {
-            z-index: 2;
-            position: absolute;
-            left: 40%;
-            top: 40%;
-            max-width: 25%;
-            max-height: 25%;
+        div#astronauta {
+            height: 80%;
+            width: 80%;
+            background: transparent url("imagens/astronauta.png") center center no-repeat fixed;
         }
     </style>
 </head>
+
 <body>
 
-    <div>
-        <img src="imagens/astronauta.png" alt="Astrounauta" class="astronauta">
-        <img src="imagens/espaco.jpg" alt="Imagem do espaço" class="espaco"></img></img>
+    <div id="espaco">
+        <div id="astronauta">
+        </div>
     </div>
-    
 </body>
+
 </html>
