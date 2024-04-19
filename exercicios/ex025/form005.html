@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset {
+            width: 200px;
+            background-color: lightgray;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            
+                <input type="radio" name="sx" id="isxm" value="M"> <label for="isxm">Masculino</label><br>
+                <input type="radio" name="sx" id="isxf" checked value="F"> <label for="isxf">Feminino</label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <label for="ibasq">
+                <input type="checkbox" name="basq" id="ibasq"> Basquete
+            </label> <br>
+            <label for="ifut">
+                <input type="checkbox" name="fut" id="ifut"> Futebol <br>
+            </label>
+            <label for="inat">
+                <input type="checkbox" name="nat" id="inat"> Natação <br>
+            </label>
+            <label for="iten">
+                <input type="checkbox" name="ten" id="iten"> Tênis <br>
+            </label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
